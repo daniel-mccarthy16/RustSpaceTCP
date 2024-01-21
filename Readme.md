@@ -10,9 +10,8 @@ This project provides a custom implementation of the TCP/IP stack in Rust, lever
 
 ## Project Goals
 This project is designed for educational purposes, aiming to:
-- Provide a practical experience with Rust programming, particularly in the context of network protocol implementation.
-- Offer a deeper understanding of UNIX socket programming and the internals of the TCP protocol.
-- Enable transparent integration with existing C applications, demonstrating the extensibility and flexibility of the custom TCP/IP stack.
+- Gain some practical experience with Rust programming, particularly in the context of network protocol implementation.
+- Gain a deep understanding of UNIX socket programming and the TCP protocol.
 
 ## Getting Started
 ### Prerequisites
