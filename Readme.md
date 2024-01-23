@@ -22,8 +22,8 @@ This project is designed for educational purposes, aiming to:
 ### Installation and Usage
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/daniel-mccarthy16/wtf-is-tcp
-   cd wtf_is_tcp
+   git clone https://github.com/daniel-mccarthy16/RustSpaceTCP
+   cd RustSpaceTCP
    ```
 
 2. **Build and start the server**
