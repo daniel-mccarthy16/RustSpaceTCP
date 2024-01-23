@@ -620,7 +620,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "wtf_is_tcp"
+name = "rust_space_tcp"
 version = "0.1.0"
 dependencies = [
  "etherparse",

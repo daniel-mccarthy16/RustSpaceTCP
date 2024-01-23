@@ -1,8 +1,8 @@
 #!/bin/bash
 cleanup() {
     echo "cleaning up server and virtual tunnel interface\n"
-    kill "$wtf_is_tcp_pid"
-    wait "$wtf_is_tcp_pid"
+    kill "$rust_space_tcp_pid"
+    wait "$rust_space_tcp_pid"
 
     # Remove the Unix domain socket file
     echo "Removing Unix domain socket file..."
@@ -26,11 +26,11 @@ if ! cargo build; then
 fi
 
 # Set capabilities on the binary
-sudo setcap 'cap_net_raw,cap_net_admin+eip' ./target/debug/wtf_is_tcp
+sudo setcap 'cap_net_raw,cap_net_admin+eip' ./target/debug/rust_space_tcp
 
 # Run server in the background
-./target/debug/wtf_is_tcp &
-wtf_is_tcp_pid=$!
+./target/debug/rust_space_tcp &
+rust_space_tcp_pid=$!
 
 # Function to check if the interface exists
 interface_exists() {
@@ -47,4 +47,4 @@ done
 sudo ip addr add 10.0.0.1/24 dev mytun
 sudo ip link set up dev mytun
 
-wait "$wtf_is_tcp_pid"
+wait "$rust_space_tcp_pid"
